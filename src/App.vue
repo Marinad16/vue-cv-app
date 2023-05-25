@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <main-banner/>
+    <my-skills/>
+    <my-projects/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MainBanner from "@/components/MainBanner";
+import MySkills from "@/components/MySkills";
+import MyProjects from "@/components/MyProjects";
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MySkills,
+    MainBanner,
+    MyProjects,
   }
 }
 </script>
+<style lang="sass">
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+html
+  height: 100%
+body
+  margin: 0
+  font-family: 'Roboto Mono', monospace
+  height: 100%
+  overflow-x: hidden
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+.app-container
+  width: 100%
+  max-width: 1320px
+  padding: 20px
+  margin: 0 auto
 </style>
+
