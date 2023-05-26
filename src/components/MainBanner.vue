@@ -10,10 +10,12 @@
     </div>
     <div class="text-content">
       <p>Hi, There!</p>
-
       <h2>
-        I'm A Frontend Developer!
+        I'm A Marina Dubyna!
       </h2>
+      <h1>
+        I'm A Frontend Developer!
+      </h1>
     </div>
   </div>
 </template>
@@ -49,6 +51,8 @@ export default {}
 .text-content
   color: white
   text-align: center
+  width: 100%
+  max-width: 300px
 
 
 @function random-value()

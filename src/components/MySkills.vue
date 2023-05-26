@@ -1,7 +1,7 @@
 <template>
   <div class="skills">
     <div class="app-container">
-      <h2>Skills</h2>
+      <h2 class="app-title">Skills</h2>
       <div class="skills-wrapper">
         <div class="skills__item"  v-for="icon in icons"  :key="icon.id">
           <i :class="icon.icon"></i>
@@ -45,12 +45,16 @@ data() {
     width: 100%;
   }
   &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     width: 100%;
     max-width: 25%;
     font-size: 100px;
     border: 1px solid white;
     transition: all .5s ease-in-out;
+    padding: 20px;
     i {
       color: white;
       transition: all .5s ease-in-out;
